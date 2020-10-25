@@ -19,9 +19,9 @@ class LoginMessages with ChangeNotifier {
   static const defaultUsernameHint = 'Email';
   static const defaultPasswordHint = 'Password';
   static const defaultConfirmPasswordHint = 'Confirm Password';
-  static const defaultForgotPasswordButton = 'Forgot Password?';
+  static const defaultForgotPasswordButton = 'Forgot Password';
   static const defaultLoginButton = 'LOGIN';
-  static const defaultSignupButton = 'SIGNUP';
+  static const defaultSignupButton = 'SIGN UP';
   static const defaultRecoverPasswordButton = 'RECOVER';
   static const defaultRecoverPasswordIntro = 'Reset your password here';
   static const defaultRecoverPasswordDescription =
