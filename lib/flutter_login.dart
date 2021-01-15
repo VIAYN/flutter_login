@@ -26,10 +26,9 @@ import 'src/constants.dart';
 
 class LoginProvider {
   final Widget icon;
-  final ProviderAuthCallback callback;
 
-  LoginProvider({@required this.icon, @required this.callback})
-      : assert((icon != null && callback != null), ' callback and icon should not be null');
+  LoginProvider({@required this.icon})
+      : assert((icon != null), ' callback and icon should not be null');
 }
 
 class _AnimationTimeDilationDropdown extends StatelessWidget {

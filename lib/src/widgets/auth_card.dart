@@ -664,22 +664,11 @@ class _LoginCardState extends State<_LoginCard> with TickerProviderStateMixin {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: auth.loginProvidersList.map((loginProvider) {
-        int index = auth.loginProvidersList.indexOf(loginProvider);
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 3.0),
           child: ScaleTransition(
             scale: _buttonScaleAnimation,
-            child: AnimatedIconButton(
-              icon: loginProvider.icon,
-              controller: _providerControllerList[index],
-              tooltip: '',
-              onPressed: () => _loginProviderSubmit(
-                control: _providerControllerList[index],
-                callback: () {
-                  return loginProvider.callback();
-                },
-              ),
-            ),
+            child: loginProvider.icon,
           ),
         );
       }).toList(),
