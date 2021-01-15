@@ -730,10 +730,18 @@ class _LoginCardState extends State<_LoginCard> with TickerProviderStateMixin {
                 _buildForgotPassword(theme, messages),
                 _buildSubmitButton(theme, messages, auth),
                 _buildSwitchAuthButton(theme, messages, auth),
-                _buildProvidersLogInButton(theme, messages, auth),
               ],
             ),
           ),
+          Container(
+            padding: Paddings.fromRBL(cardPadding),
+            width: cardWidth,
+            child: Column(
+              children: <Widget>[
+                _buildProvidersLogInButton(theme, messages, auth),
+              ],
+            ),
+          )
         ],
       ),
     );
