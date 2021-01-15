@@ -25,7 +25,7 @@ export 'src/providers/login_theme.dart';
 import 'src/constants.dart';
 
 class LoginProvider {
-  final IconData icon;
+  final Widget icon;
   final ProviderAuthCallback callback;
 
   LoginProvider({@required this.icon, @required this.callback})
